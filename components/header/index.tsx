@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -6,7 +6,7 @@ import Container from "@/components/container";
 import LogoIcon from "@/assets/icons/main-logo.svg";
 import PhoneIcon from "@/assets/icons/u_phone-alt.svg";
 import MailIcon from "@/assets/icons/fi_mail.svg";
-function index() {
+const Index = () => {
   const router = useRouter();
   const handleClick = () => {
     router.push("/");
@@ -15,7 +15,10 @@ function index() {
     <Container>
       <nav className="h-[79px] flex items-center justify-between">
         <div className="flex items-center gap-x-5">
-          <div onClick={handleClick} className="flex items-center leading-7 gap-[11px] cursor-pointer">
+          <div
+            onClick={handleClick}
+            className="flex items-center leading-7 gap-[11px] cursor-pointer"
+          >
             <Image src={LogoIcon} alt="logo" />
             <span className="w-[100px] font-semibold text-[24px] text-[#fff]">
               Sport Market
@@ -50,6 +53,6 @@ function index() {
       </nav>
     </Container>
   );
-}
+};
 
-export default index;
+export default Index;
