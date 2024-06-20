@@ -5,6 +5,7 @@ import Discount from "@/sections/main-sections/discount";
 import News from "@/sections/main-sections/news";
 import Best from "@/sections/main-sections/best";
 import Products from "@/sections/main-sections/products";
+import Useful from "@/sections/main-sections/useful";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <News />
       <Products />
       <Best />
+      <Useful />
     </>
   );
 }
